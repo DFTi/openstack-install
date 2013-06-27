@@ -8,7 +8,7 @@ eth2 ip: 192.168.0.91
 
 openstack-compute-01
 --
-N/A
+eth0 ip: 10.10.10.53
 
 openstack-controller-01
 --
