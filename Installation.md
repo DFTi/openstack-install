@@ -22,3 +22,5 @@ eth1 ip: 192.168.0.85
 - quantum
 - nova
 - cinder
+
+#### Endpoints
