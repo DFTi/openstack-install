@@ -11,6 +11,9 @@ Two other machines exist at our disposal, but are not in use yet. See [them here
 ---
 
 ## openstack-controller
+
+Status: Configured and seems to be working correctly.
+
 ### /etc/network/interfaces
 ```
 # The loopback network interface
@@ -33,6 +36,9 @@ netmask 255.255.255.0
 ```
 
 ## openstack-compute-01
+
+Status: Configured and seems to be working correctly except for VM console access through Horizon.
+
 ### /etc/network/interfaces
 ```
 # The loopback network interface
@@ -53,5 +59,10 @@ netmask 255.255.255.0
 ```
 
 ## openstack-network-01
+
+Status: Misconfigured, not working.
+
+WARNING: The quad-port NIC card only registers kernel activity on 1 port -- I think this is why we might /think/ it's misconfigured. I will be replacing this card.
+
 ### /etc/network/interfaces
 Not network accessible -- misconfigured
