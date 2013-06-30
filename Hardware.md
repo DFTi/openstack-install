@@ -71,9 +71,23 @@ netmask 255.255.255.0
 - eth4 [connected to switch]
 - eth5 [unused]
 
-Status: Misconfigured, not working.
-
-WARNING: The quad-port NIC card only registers kernel activity on 1 port -- I think this is why we might /think/ it's misconfigured. I will be replacing this card.
-
 ### /etc/network/interfaces
-Not network accessible -- misconfigured
+```
+auto lo
+iface lo inet loopback
+
+auto eth3
+iface eth3 inet static
+address 10.10.10.52
+netmask 255.255.255.0
+
+auto eth4
+iface eth4 inet dhcp
+
+auto eth2
+iface eth2 inet manual
+up ifconfig $IFACE 0.0.0.0 up
+up ip link set $IFACE promisc on
+down ip link set $IFACE promisc off
+down ifconfig $IFACE down
+```
