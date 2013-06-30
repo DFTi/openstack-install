@@ -69,6 +69,7 @@ netmask 255.255.255.0
 - eth2 (Connected to Network)
 - eth3
 - eth4
+- eth5 [unused]
 
 Status: Misconfigured, not working.
 
