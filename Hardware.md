@@ -60,6 +60,15 @@ netmask 255.255.255.0
 
 ## openstack-network-01
 
+### NICs
+#### Mobo
+- eth0 
+- eth1
+#### Intel Quad NIC
+- eth2 (Connected to Network)
+- eth3
+- eth4
+
 Status: Misconfigured, not working.
 
 WARNING: The quad-port NIC card only registers kernel activity on 1 port -- I think this is why we might /think/ it's misconfigured. I will be replacing this card.
