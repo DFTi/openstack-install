@@ -64,6 +64,7 @@ netmask 255.255.255.0
 #### Mobo
 - eth0 
 - eth1
+
 #### Intel Quad NIC
 - eth2 (Connected to Network)
 - eth3
