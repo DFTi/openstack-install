@@ -12,7 +12,7 @@ Two other machines exist at our disposal, but are not in use yet. See [them here
 
 ## openstack-controller
 
-Status: Configured and seems to be working correctly.
+Status: Rocking.
 
 ### /etc/network/interfaces
 ```
@@ -37,7 +37,7 @@ netmask 255.255.255.0
 
 ## openstack-compute-01
 
-Status: Configured and seems to be working correctly except for VM console access through Horizon.
+Status: Rocking, but VNC is not working.
 
 ### /etc/network/interfaces
 ```
@@ -59,6 +59,8 @@ netmask 255.255.255.0
 ```
 
 ## openstack-network
+
+Status: Rocking.
 
 ### NICs
 #### Mobo
