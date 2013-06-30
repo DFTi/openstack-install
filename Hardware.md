@@ -91,3 +91,13 @@ up ip link set $IFACE promisc on
 down ip link set $IFACE promisc off
 down ifconfig $IFACE down
 ```
+
+### Routing Table
+
+```
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         andaman         0.0.0.0         UG    0      0        0 eth4
+10.10.10.0      *               255.255.255.0   U     0      0        0 eth3
+192.168.0.0     *               255.255.255.0   U     0      0        0 eth4
+```
