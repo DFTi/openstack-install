@@ -62,13 +62,13 @@ netmask 255.255.255.0
 
 ### NICs
 #### Mobo
-- eth0 
-- eth1
+- eth0 [unused]
+- eth1 [unused]
 
 #### Intel Quad NIC
 - eth2 (Connected to Network)
-- eth3
-- eth4
+- eth3 [connected to switch]
+- eth4 [connected to switch]
 - eth5 [unused]
 
 Status: Misconfigured, not working.
