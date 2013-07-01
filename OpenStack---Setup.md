@@ -1,3 +1,7 @@
+## outstanding issues
+
+- Volume creation results in STATUS:ERROR
+
 ## Physical Machines
 
 | MARK  | IP            | Hostname             | RU  | RAM   | HDD   | Cores  | CPU Model              |
