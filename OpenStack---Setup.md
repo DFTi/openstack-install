@@ -8,6 +8,8 @@
 
 Two other machines exist at our disposal, but are not in use yet. See [them here](Unused-Hardware)
 
+[How to get temporary internet access on a restricted node](Temporary-Internet-Access)
+
 ---
 
 ## openstack-controller
@@ -57,8 +59,6 @@ iface eth1 inet static
 address 10.20.20.53
 netmask 255.255.255.0
 ```
-
-[Doing maintenance on a node that has no direct internet access](Temporary-Internet-Access)
 
 ### /etc/nova/nova.conf
 ```
