@@ -10,21 +10,20 @@ http://docs.openstack.org/trunk/openstack-compute/admin/content/nova-vncproxy-re
 
 In order to get the packages, we need internet access. In order to do this we have eth2 plugged into the switch as well.
 
-Up the interface:
+#### Up the interface:
 `sudo ifconfig eth2 up`
 
-Add the route:
+#### Add the route:
 `sudo route add default gw 192.168.0.1 eth2`
 
-Add the DNS settings:
+#### Add the DNS settings:
 `sudo sh -c 'echo "nameserver 8.8.8.8" >> /etc/resolv.conf'`
 
-When finished with internet access remove the route:
+#### When finished with internet access remove the route:
 `sudo route del default`
 
-Reset the DNS settings back to normal:
+#### Reset the DNS settings back to normal:
 `sudo resolvconf -u`
 
-Down the interface:
+#### Down the interface:
 `sudo ifconfig eth2 down`
-
