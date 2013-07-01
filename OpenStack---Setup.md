@@ -37,7 +37,7 @@ netmask 255.255.255.0
 
 ## openstack-compute-01
 
-Status: Rocking, but VNC is not working.
+Status: Rocking, but VNC is not working. [working on this -k]
 
 ### /etc/network/interfaces
 ```
@@ -57,6 +57,25 @@ iface eth1 inet static
 address 10.20.20.53
 netmask 255.255.255.0
 ```
+
+### Adding VNC support
+http://docs.openstack.org/diablo/openstack-compute/admin/content/configuring-the-vnc-proxy.html
+http://docs.openstack.org/trunk/openstack-compute/admin/content/nova-vncproxy-replaced-with-nova-novncproxy.html
+
+In order to get the packages, we need internet access. In order to do this we have eth2 plugged into the switch as well.
+
+Up the interface:
+`sudo ifconfig eth2 up`
+
+Add the route:
+`sudo route add default gw 192.168.0.1 eth2`
+
+When finished with internet access remove the route:
+`sudo route del default`
+
+And down the interface:
+`sudo ifconfig eth2 down`
+
 
 ## openstack-network
 
@@ -232,4 +251,3 @@ polling_interval = 2
 [SECURITYGROUP]
 firewall_driver = quantum.agent.linux.iptables_firewall.OVSHybridIptablesFirewallDriver
 ```
-
