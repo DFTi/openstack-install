@@ -1,20 +1,20 @@
 Server Stack
 ---
-### openstack-network-01
+### OpenStackNetwork
 
 ##### Networking
-eth0 ip: 10.10.10.52
+eth2 ip: 10.100.60.25
 
-### openstack-compute-01
-
-##### Networking
-eth0 ip: 10.10.10.53
-
-### openstack-controller-01
+### OpenStackController
 
 ##### Networking
-eth0 ip: 10.10.10.51
-eth1 ip: 192.168.0.85
+eth0 ip: 10.100.60.26
+
+### OpenStackCompute01
+
+##### Networking
+eth0 ip: 10.100.60.27
+
 
 ##### Databases
 - keystone
